@@ -47,15 +47,13 @@
                 </configuration>
             </plugin>
 
-    <!-- SonarQube Maven Plugin -->
-        <plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.9.1.2184</version> <!-- Use the latest stable version -->
-        </plugin>
-    </plugins>
-</build>
-                 
+            <!-- SonarQube Maven Plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version> <!-- Use the latest stable version -->
+            </plugin>
+
             <!-- Existing maven-dependency-plugin configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
