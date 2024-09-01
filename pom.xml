@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>works.buddy.samples</groupId>
@@ -46,11 +45,10 @@
                 </configuration>
             </plugin>
 
-            <!-- SonarQube Maven Plugin Configuration -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version> <!-- Ensure the latest stable version -->
+                <version>3.9.1.2184</version>
             </plugin>
 
             <plugin>
@@ -79,11 +77,20 @@
         </plugins>
     </build>
 
+    <!-- Repository configuration -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
+
+    <!-- Plugin repositories -->
     <pluginRepositories>
         <pluginRepository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </pluginRepository>
-        <pluginRepository>
             <id>central</id>
-            <url>https://repo.maven
+            <url>https://repo.maven.apache.org/maven2</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
