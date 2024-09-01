@@ -48,7 +48,7 @@
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version>
+                <version>3.8.0.2131</version> <!-- Compatible with Java 11 -->
             </plugin>
 
             <plugin>
@@ -77,7 +77,6 @@
         </plugins>
     </build>
 
-    <!-- Repository configuration -->
     <repositories>
         <repository>
             <id>central</id>
@@ -85,7 +84,6 @@
         </repository>
     </repositories>
 
-    <!-- Plugin repositories -->
     <pluginRepositories>
         <pluginRepository>
             <id>central</id>
