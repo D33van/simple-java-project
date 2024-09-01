@@ -20,8 +20,9 @@ jobs:
           java-version: '11'
 
       - name: Build and SonarQube Scan with Maven
-        run: mvn clean install org.sonarsource.scanner.maven:sonar \
-          -Dsonar.projectKey=my-Java-web-app \
-          -Dsonar.organization=my-org \
-          -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
-          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: |
+          mvn clean install sonar:sonar \
+            -Dsonar.projectKey=my-Java-web-app \
+            -Dsonar.organization=my-org \
+            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
